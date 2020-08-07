@@ -1,0 +1,432 @@
+﻿Version     0.0
+Platform    uLCD-90DT-L
+PlatRes     480x800
+Depends
+end
+Options
+    Genie
+    Speed                        115200
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  1
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+    MaxString                    75
+    ComPort                      0
+    ComTX1pinIdx                 0
+    ComRX1pinIdx                 0
+end
+Form
+    Name                         Form0
+    Alias                        Form0
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Scope
+    Name                         Scope0
+    Alias                        Scope0
+    Color                        0xE5060B
+    GraticuleColor               0x005100
+    GraticuleVisible             Yes
+    GraticuleXinc                1
+    GraticuleYinc                50
+    Height                       350
+    Left                         50
+    RefreshIncrement             10
+    Top                          100
+    Trace1Color                  LIME
+    Trace2Color                  BLUE
+    Trace3Color                  RED
+    Trace4Color                  FUCHSIA
+    Traces                       1
+    Width                        650
+    Xmag                         0
+    Yamp                         25
+    YLine                        350
+    YLineColor                   YELLOW
+    YLineVisible                 Yes
+    Yoffset                      0
+end
+GSlider
+    Name                         Slider0
+    Alias                        Slider0
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             BLACK
+    Bevel.InnerHighlight         clBtnHighlight
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            clBtnShadow
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             Lowered
+    Bevel.Innerwidth             2
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                Yes
+    BorderColor                  clBtnFace
+    BorderWidth                  1
+    Color                        BLACK
+    Height                       170
+    Left                         736
+    Maxvalue                     3
+    Minvalue                     0
+    Orientation                  Vertical
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Spacing                      4
+    SolidFill                    Yes
+    TickWidth                    50
+    Top                          128
+    Width                        37
+    OnChanged                    MagicEvent0
+    OnChanging                   Strings1Set
+end
+StaticText
+    Name                         Statictext0
+    Alias                        Statictext0
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'TEMPERATURE NOW'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    12
+    Font.Style                   []
+    Height                       23
+    Left                         64
+    Top                          20
+    Transparent                  Yes
+    Width                        170
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits0
+    Alias                        Leddigits0
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       43
+    LeadingZero                  No
+    Left                         68
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          48
+    Width                        113
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+4Dbutton
+    Name                         4Dbutton0
+    Alias                        4Dbutton0
+    Height                       48
+    Left                         732
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          336
+    Type                         Button01
+    Width                        48
+    OnChanged                    MagicEvent1
+end
+4Dbutton
+    Name                         4Dbutton1
+    Alias                        4Dbutton1
+    Height                       48
+    Left                         732
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          406
+    Type                         Button01
+    Width                        48
+    OnChanged                    MagicEvent2
+end
+StaticText
+    Name                         Statictext1
+    Alias                        Statictext1
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Milk Pipeline'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    26
+    Font.Style                   [Bold]
+    Height                       50
+    Left                         288
+    Top                          16
+    Transparent                  Yes
+    Width                        250
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext2
+    Alias                        Statictext2
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      PREV
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         740
+    Top                          316
+    Transparent                  Yes
+    Width                        34
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext3
+    Alias                        Statictext3
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      NEXT
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    11
+    Font.Style                   []
+    Height                       18
+    Left                         740
+    Top                          388
+    Transparent                  Yes
+    Width                        37
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext8
+    Alias                        Statictext8
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      175
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         22
+    Top                          95
+    Transparent                  Yes
+    Width                        21
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext7
+    Alias                        Statictext7
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      150
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         22
+    Top                          145
+    Transparent                  Yes
+    Width                        21
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext6
+    Alias                        Statictext6
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      125
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         22
+    Top                          195
+    Transparent                  Yes
+    Width                        21
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext5
+    Alias                        Statictext5
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      100
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         22
+    Top                          245
+    Transparent                  Yes
+    Width                        21
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext4
+    Alias                        Statictext4
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      75
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         28
+    Top                          295
+    Transparent                  Yes
+    Width                        14
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext9
+    Alias                        Statictext9
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      50
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         28
+    Top                          345
+    Transparent                  Yes
+    Width                        14
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext10
+    Alias                        Statictext10
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      '25 '
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         27
+    Top                          391
+    Transparent                  Yes
+    Width                        18
+    WordWrap                     Yes
+end
+Strings
+    Name                         Strings1
+    Alias                        Strings1
+    Alignment                    Center
+    BGcolor                      BLACK
+    Height                       20
+    FGcolor                      WHITE
+    Font.Bold                    Yes
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    ''
+    Font.Opaque                  Yes
+    Font.Size                    20
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         724
+    Strings                      'Normal\n1 day\n1 week\n1 month\n'
+    StringsStyle                 Message
+    Top                          96
+    Width                        65
+    OnChanged                    'Report Message'
+end
+StaticText
+    Name                         Statictext12
+    Alias                        Statictext12
+    Alignment                    Center
+    AutoSize                     Yes
+    Caption                      0
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         35
+    Top                          441
+    Transparent                  Yes
+    Width                        6
+    WordWrap                     Yes
+end
+MagicEvent
+    Name                         MagicEvent0
+    Alias                        MagicEvent0
+    Code                         MagicEvent0.inc
+end
+MagicCode
+    Name                         MagicCode0
+    Alias                        MagicCode0
+    Code                         MagicCode0.inc
+    InsertPoint                  Constant/Global/Data
+end
+MagicCode
+    Name                         MagicCode1
+    Alias                        MagicCode1
+    Code                         MagicCode1.inc
+    InsertPoint                  MainLoop
+end
+MagicEvent
+    Name                         MagicEvent1
+    Alias                        MagicEvent1
+    Code                         MagicEvent1.inc
+end
+MagicEvent
+    Name                         MagicEvent2
+    Alias                        MagicEvent2
+    Code                         MagicEvent2.inc
+end
+MagicCode
+    Name                         MagicCode2
+    Alias                        MagicCode2
+    Code                         MagicCode2.inc
+    InsertPoint                  PostActivateForm
+end

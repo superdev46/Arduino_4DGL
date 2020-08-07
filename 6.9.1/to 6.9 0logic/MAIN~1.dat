@@ -1,0 +1,17 @@
+"Slider0" 0000 0000 2E0 80
+"Statictext0" C600 0000 40 14
+"Leddigits0" E600 0000 44 30
+"iLeddigits0" 0C00 0001 44 30
+"4Dbutton0" 6E00 0001 2DC 150
+"4Dbutton1" 9400 0001 2DC 196
+"Statictext1" BA00 0001 120 10
+"Statictext2" 1C00 0002 2E4 13C
+"Statictext3" 2200 0002 2E4 184
+"Statictext8" 2800 0002 16 5F
+"Statictext7" 2C00 0002 16 91
+"Statictext6" 3000 0002 16 C3
+"Statictext5" 3400 0002 16 F5
+"Statictext4" 3800 0002 1C 127
+"Statictext9" 3A00 0002 1C 159
+"Statictext10" 3C00 0002 1B 187
+"Statictext12" 3E00 0002 23 1B9
